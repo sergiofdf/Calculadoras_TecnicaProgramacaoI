@@ -20,10 +20,8 @@ namespace Calculadoras
 
         private void btnZero_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txbDisplay.Text))
-            {
-                ConcatenateNumber(0);
-            }
+            ConcatenateNumber(0);
+
         }
 
         private void btnOne_Click(object sender, EventArgs e)
