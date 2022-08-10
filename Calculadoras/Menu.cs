@@ -10,15 +10,13 @@
         private void btnImc_Click(object sender, EventArgs e)
         {
             var imcCalc = new FormImcCalculator();
-            Hide();
-            imcCalc.Show();
+            imcCalc.ShowDialog();
         }
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
             var calcSimples = new FrmCalculadoraSimples();
-            this.Hide();
-            calcSimples.Show();
+            calcSimples.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

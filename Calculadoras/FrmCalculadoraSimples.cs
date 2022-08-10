@@ -167,9 +167,7 @@ namespace Calculadoras
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu menu = new();
-            this.Hide();
-            menu.Show();
+            Close();
         }
     }
 }
