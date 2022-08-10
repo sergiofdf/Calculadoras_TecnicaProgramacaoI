@@ -25,6 +25,7 @@ var result = Calc.Compute("2+2", "");
 ## Conceitos abordados
 - Criação de layout com WindowsForms;
 - Controle de eventos e propriedades dos objetos de um formulário no WindowsForms;
+- Mudança de tela entre formulários;
 - Lógica de programação.
 
 --- 
@@ -36,4 +37,4 @@ var result = Calc.Compute("2+2", "");
 
 - Execute o projeto com `CTRL + F5`
 
-- Se desejar rodar o projeto da calculadora de IMC, modificar no arquivo Program.cs o projeto de inicialização. Será criado um menu para selecionar o projeto em breve.
+- No menu inicial escolha entre as duas opções de calculadora desenvolvidas.
