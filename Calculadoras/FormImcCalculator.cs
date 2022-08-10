@@ -46,5 +46,12 @@ namespace Calculadoras
             lblGenericResult.Text = "";
             txbWeight.Focus();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Menu menu = new Menu();
+            menu.Show();
+        }
     }
 }

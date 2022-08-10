@@ -45,6 +45,7 @@
             this.btnSubtract = new System.Windows.Forms.Button();
             this.btnMultiply = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txbDisplay
@@ -216,6 +217,18 @@
             this.btnDivide.UseVisualStyleBackColor = true;
             this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.OrangeRed;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(28, 199);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 29);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "Voltar Menu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmCalculadoraSimples
             // 
             this.AcceptButton = this.btnEqual;
@@ -223,7 +236,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.CancelButton = this.btnClean;
-            this.ClientSize = new System.Drawing.Size(489, 217);
+            this.ClientSize = new System.Drawing.Size(498, 239);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.btnSubtract);
@@ -270,5 +284,6 @@
         private Button btnSubtract;
         private Button btnMultiply;
         private Button btnDivide;
+        private Button button1;
     }
 }

@@ -34,6 +34,7 @@
             this.btnCalc = new System.Windows.Forms.Button();
             this.pcbLogoImc = new System.Windows.Forms.PictureBox();
             this.pcbLogoCalc = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoImc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogoCalc)).BeginInit();
             this.SuspendLayout();
@@ -95,12 +96,26 @@
             this.pcbLogoCalc.TabIndex = 4;
             this.pcbLogoCalc.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(95, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(229, 56);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Sair";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(406, 344);
+            this.ClientSize = new System.Drawing.Size(412, 400);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pcbLogoCalc);
             this.Controls.Add(this.pcbLogoImc);
             this.Controls.Add(this.btnCalc);
@@ -123,5 +138,6 @@
         private Button btnCalc;
         private PictureBox pcbLogoImc;
         private PictureBox pcbLogoCalc;
+        private Button button1;
     }
 }

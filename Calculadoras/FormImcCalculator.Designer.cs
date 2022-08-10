@@ -40,6 +40,7 @@
             this.lblGenericResult = new System.Windows.Forms.Label();
             this.lblWeightUnit = new System.Windows.Forms.Label();
             this.lblHeightUnit = new System.Windows.Forms.Label();
+            this.btnMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.lgoForm)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +106,7 @@
             // 
             this.btnCalculate.BackColor = System.Drawing.Color.DimGray;
             this.btnCalculate.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCalculate.Location = new System.Drawing.Point(123, 250);
+            this.btnCalculate.Location = new System.Drawing.Point(66, 250);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(81, 35);
             this.btnCalculate.TabIndex = 3;
@@ -117,7 +118,7 @@
             // 
             this.btnClean.BackColor = System.Drawing.Color.Red;
             this.btnClean.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnClean.Location = new System.Drawing.Point(214, 250);
+            this.btnClean.Location = new System.Drawing.Point(157, 250);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(81, 35);
             this.btnClean.TabIndex = 4;
@@ -156,6 +157,18 @@
             this.lblHeightUnit.TabIndex = 13;
             this.lblHeightUnit.Text = "cm";
             // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.Color.OrangeRed;
+            this.btnMenu.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnMenu.Location = new System.Drawing.Point(249, 250);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(81, 35);
+            this.btnMenu.TabIndex = 14;
+            this.btnMenu.Text = "Voltar Menu";
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
             // FormImcCalculator
             // 
             this.AcceptButton = this.btnCalculate;
@@ -164,6 +177,7 @@
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.CancelButton = this.btnClean;
             this.ClientSize = new System.Drawing.Size(415, 380);
+            this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.lblHeightUnit);
             this.Controls.Add(this.lblWeightUnit);
             this.Controls.Add(this.lblGenericResult);
@@ -198,5 +212,6 @@
         private Label lblGenericResult;
         private Label lblWeightUnit;
         private Label lblHeightUnit;
+        private Button btnMenu;
     }
 }
