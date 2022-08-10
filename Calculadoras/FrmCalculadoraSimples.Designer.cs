@@ -218,9 +218,11 @@
             // 
             // FrmCalculadoraSimples
             // 
+            this.AcceptButton = this.btnEqual;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
+            this.CancelButton = this.btnClean;
             this.ClientSize = new System.Drawing.Size(489, 217);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMultiply);
@@ -240,6 +242,7 @@
             this.Controls.Add(this.btnSeven);
             this.Controls.Add(this.txbDisplay);
             this.Name = "FrmCalculadoraSimples";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora Simples";
             this.Load += new System.EventHandler(this.FrmCalculadoraSimples_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmCalculadoraSimples_KeyDown);

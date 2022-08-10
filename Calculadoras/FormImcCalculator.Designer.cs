@@ -162,7 +162,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(415, 389);
+            this.CancelButton = this.btnClean;
+            this.ClientSize = new System.Drawing.Size(415, 380);
             this.Controls.Add(this.lblHeightUnit);
             this.Controls.Add(this.lblWeightUnit);
             this.Controls.Add(this.lblGenericResult);
@@ -175,6 +176,7 @@
             this.Controls.Add(this.lblTitleForm);
             this.Controls.Add(this.lgoForm);
             this.Name = "FormImcCalculator";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora IMC";
             this.Load += new System.EventHandler(this.FormImcCalculator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lgoForm)).EndInit();
